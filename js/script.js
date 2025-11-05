@@ -32,4 +32,3 @@
   document.getElementById('listanurgente').innerHTML = "";
   }
 
-
