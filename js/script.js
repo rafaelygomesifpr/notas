@@ -23,10 +23,11 @@
   
   novaNota.style.borderLeft = `6px solid ${coresBorda[corIndex % coresBorda.length]}`;
   corIndex++;
- 
+  document.getElementById('textoNota').value = "";
   }
   
-  document.getElementById('textoNota').value = "";
+ 
+
   function apagarTudo() {
   document.getElementById('listaurgente').innerHTML = "";
   document.getElementById('listanurgente').innerHTML = "";
