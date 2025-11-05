@@ -21,9 +21,7 @@
     document.getElementById('listanurgente').appendChild(novaNota);
   }
   
-  novaNota.style.borderLeft = `6px solid ${coresBorda[corIndex %
-    
-    coresBorda.length]}`;
+  novaNota.style.borderLeft = `6px solid ${coresBorda[corIndex % coresBorda.length]}`;
   corIndex++;
  
   }
@@ -33,4 +31,3 @@
   document.getElementById('listaurgente').innerHTML = "";
   document.getElementById('listanurgente').innerHTML = "";
   }
-
