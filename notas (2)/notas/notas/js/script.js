@@ -1,10 +1,9 @@
-function adicionarNota() {
+  const coresBorda = ['#1066d6ff', '#4CAF50', '#9C27B0'];
+  corIndex = 0;
+  function adicionarNota() {
   var texto = document.getElementById('textoNota').value;
   var tipo = document.querySelector('input[name="tipo"]:checked').value;
-  let corIndex = 0;
-  const coresBorda = ['#2196F3', '#4CAF50', '#9C27B0']; 
- 
-
+  
   if (texto === "") {
     alert("Digite algo antes de adicionar!");
     return;
@@ -17,19 +16,20 @@ function adicionarNota() {
 
  
   if (tipo === "urgente") {
-    document.getElementById('box1').appendChild(novaNota);
+    document.getElementById('listaurgente').appendChild(novaNota);
   } else {
-    document.getElementById('box2').appendChild(novaNota);
+    document.getElementById('listanurgente').appendChild(novaNota);
   }
+  
   novaNota.style.borderLeft = `6px solid ${coresBorda[corIndex % coresBorda.length]}`;
   corIndex++;
-  document.getElementById('textoNota').value = "";
-}
-   novaNota.style.borderLeft = `6px solid ${coresBorda[corIndex % coresBorda.length]}`;
-  corIndex++;
+ 
+  }
   
-function apagarTudo() {
-  document.getElementById('box1').innerHTML = "";
-  document.getElementById('box2').innerHTML = "";
-}
+  document.getElementById('textoNota').value = "";
+  function apagarTudo() {
+  document.getElementById('listaurgente').innerHTML = "";
+  document.getElementById('listanurgente').innerHTML = "";
+  }
+
 
