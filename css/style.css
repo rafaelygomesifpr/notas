@@ -68,3 +68,21 @@ button {
 .urgente {
   background-color: red;
 }
+.urgente {
+  background-color: red;
+}
+
+.nao-urgente {
+  background-color: #e7ff3c;
+  color: black;
+}
+
+.nota button {
+  background-color: rgba(0,0,0,0.2);
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-left: 10px;
+  
+}
